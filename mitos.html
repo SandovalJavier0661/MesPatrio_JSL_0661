@@ -5,16 +5,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+/* Reset básico para el cálculo de bordes y dimensiones */
 * {
   box-sizing: border-box;
 }
 
+/* Estilos generales del cuerpo de la página */
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   background-color: #fafafa;
 }
 
+/* Encabezado principal superior */
 header {
   background-color: #006847;
   padding: 30px;
@@ -22,23 +25,15 @@ header {
   color: white;
 }
 
+/* Menú de navegación horizontal sin listas */
 nav {
   background-color: #ce1126;
+  text-align: left;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-nav li {
-  float: left;
-}
-
-nav li a {
-  display: block;
+/* Estilos para los botones de enlace directos */
+nav a {
+  display: inline-block;
   color: white;
   text-align: center;
   padding: 14px 20px;
@@ -46,10 +41,12 @@ nav li a {
   font-weight: bold;
 }
 
-nav li a:hover {
+/* Cambio de color al pasar el cursor sobre los enlaces */
+nav a:hover {
   background-color: #004d34;
 }
 
+/* Contenedor del contenido principal */
 article {
   padding: 30px 20px;
   background-color: #ffffff;
@@ -59,6 +56,7 @@ article {
   line-height: 1.6;
 }
 
+/* Estilos para las tarjetas de mitos */
 .mito {
   border-left: 4px solid #ce1126;
   background-color: #f9f9f9;
@@ -73,6 +71,7 @@ article {
   font-size: 1.25rem;
 }
 
+/* Pie de página */
 footer {
   background-color: #006847;
   padding: 15px;
@@ -80,9 +79,10 @@ footer {
   color: white;
 }
 
+/* Adaptabilidad para pantallas móviles pequeñas */
 @media (max-width: 600px) {
-  nav li {
-    float: none;
+  nav a {
+    display: block;
     width: 100%;
   }
 }
@@ -90,20 +90,21 @@ footer {
 </head>
 <body>
 
+<!-- Encabezado de la página -->
 <header>
   <h1>Septiembre - Mes Patrio</h1>
 </header>
 
+<!-- Menú de navegación principal -->
 <nav>
-  <ul>
-    <li><a href="index.html">Inicio</a></li>
-    <li><a href="lineadeltiempo.html">Línea del tiempo</a></li>
-    <li><a href="personasilustres.html">Personas ilustres</a></li>
-    <li><a href="datoscuriosos.html">Datos curiosos</a></li>
-    <li><a href="mitos.html">Mitos</a></li>
-  </ul>
+  <a href="index.html">Inicio</a>
+  <a href="lineadeltiempo.html">Línea del tiempo</a>
+  <a href="personasilustres.html">Personas ilustres</a>
+  <a href="datoscuriosos.html">Datos curiosos</a>
+  <a href="mitos.html">Mitos</a>
 </nav>
 
+<!-- Sección principal -->
 <article>
   <h1>Mitos e Historias de la Independencia</h1>
 
@@ -134,9 +135,15 @@ footer {
 
 </article>
 
+<!-- Pie de página -->
 <footer>
   <p>Javier Sandoval Lugo</p>
   <p>No. Control: 24308051280661</p>
+  <p>Grado y Grupo: 5ºI</p>
+</footer>
+
+</body>
+</html>
   <p>Grado y Grupo: 5ºI</p>
 </footer>
 
